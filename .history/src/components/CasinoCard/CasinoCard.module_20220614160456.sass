@@ -1,0 +1,83 @@
+.casino-card
+  box-sizing: border-box
+  width: 1110px
+  min-height: 156px
+  padding: 16px 16px 10px 16px
+  border-radius: 12px
+  background-color: white
+  font-family: Roboto
+  font-style: normal
+  font-weight: 400
+  font-size: 12px
+  line-height: 14px
+  &__view-block
+    display: flex
+    justify-content: space-between
+  &__promo-banner
+    width: 276px
+  &__game-link-card
+    display: flex
+    gap: 24px
+    margin-top: 2px
+  &__rate
+    margin-top: 15px
+  &__circle-rate
+    margin-top: 13px
+  & &__circle-rate :global(.ant-progress-text)
+    font-family: Roboto
+    font-style: normal
+    font-weight: 400
+    font-size: 28px
+    line-height: 32px
+    letter-spacing: -2.29px
+  &__bonus-button
+    margin-top: 9px
+  &__min-dep
+    margin-top: 7px
+    text-align: center
+    color: #A5A5AB
+  &__info-block
+    margin-top: 16px
+    padding: 0 93px
+    text-align: center
+    color: #CED0D5
+
+@media screen and (max-width: 1110px) 
+  .casino-card
+    width: 912px
+    padding: 16px 16px 12px 16px
+    &__game-link-card
+      gap: 16px
+    &__circle-rate
+      display: none
+    &__promo-banner
+      width: 237px
+    &__info-block
+      padding: 0 90px
+
+@media screen and (max-width: 912px) 
+  .casino-card
+    width: 690px
+    padding: 16px 16px 12px 16px
+    &__game-link-card
+      display: none
+    &__bonus-button
+      margin-top: 7px
+    &__rate
+      margin-top: 13px
+    &__circle-rate
+      display: block
+      margin-top: 11px
+    &__promo-banner
+      font-size: 18px
+      line-height: 22px
+      width: 205px
+    &__info-block
+      padding: 0 34px
+@media screen and (max-width: 690px)
+  .casino-card
+    width: 290px
+    &__view-block
+      flex-wrap: wrap
+    &__company-icon
+      or

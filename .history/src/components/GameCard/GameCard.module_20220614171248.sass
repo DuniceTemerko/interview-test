@@ -1,0 +1,31 @@
+.card
+  display: flex
+  flex-direction: column
+  gap: 8px
+  width: 72px
+  &__img
+    height: 44px
+    border-radius: 5px
+  &__name
+    font-family: Roboto
+    font-style: normal
+    font-weight: 400
+    font-size: 12px
+    line-height: 14px
+    color: #929292
+    text-decoration-line: underline
+    text-align: center
+
+@media screen and (max-width: 690px)
+  .card
+    border: 0.85px solid #CED0D4
+    border-radius: 8px
+    width: 130px
+    height: 136px
+    padding: 3px 2px 0 4px;
+    gap: 8px
+    &__name
+      text-decoration-line: none
+    &__img
+      height: 80px
+      border-radius: 4px
